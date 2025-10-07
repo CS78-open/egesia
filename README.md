@@ -90,17 +90,6 @@ Il progetto sarà ospitato su piattaforme come GitHub/GitLab, con:
 *   Un **modello di governance** per indirizzare lo sviluppo e gestire i contributi.
 *   **Incoraggiamento alla partecipazione** di sviluppatori, esperti di sicurezza e professionisti sanitari.
 
-**Illustrazione Concettuale: L'Hub Sanitario al Centro dell'Ecosistema Interoperabile Italiano**
-
-Immaginiamo il browser "Hub Sanitario" come un centro di controllo dinamico e intuitivo, unificando l'accesso a tutte le risorse sanitarie in conformità con gli standard italiani.
-
-`
-
-`
-Questa immagine raffigura il browser "Hub Sanitario" come un elemento centrale e dinamico, collegato tramite linee bidirezionali a una serie di servizi chiave del SSN e SSR: Fascicolo Sanitario Elettronico (FSE), Piattaforme Regionali (per le Liste d'Attesa, etc.), Servizi di Telemedicina, Cartelle Cliniche Elettroniche Ospedaliere, Farmacie e Laboratori di Analisi. Il browser è stilizzato per rappresentare un'interfaccia utente moderna e unificata, mentre le etichette "Accesso Unico", "Dati in Tempo Reale" e "Conforme Realm Italiano FHIR" ne evidenziano le funzionalità e la conformità cruciali. Le icone dei servizi sono chiare e ben riconoscibili, suggerendo una tecnologia efficiente e perfettamente integrata.
-
-L'**Hub Sanitario** si propone come la soluzione definitiva per un SSN più connesso, efficiente e sicuro, abilitando i professionisti sanitari a concentrarsi sulla cura del paziente, avendo tutte le informazioni e gli strumenti necessari a portata di mano, con accesso unificato, scambio di dati in tempo reale e piena aderenza agli standard nazionali di interoperabilità.
-
 ---
 
 ## 🤝 Come Contribuire

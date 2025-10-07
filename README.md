@@ -14,11 +14,11 @@ Referente progetto: Marco Pingitore - E-mail: marco@marcopingitore.it
 
 ## 💡 Visione e Missione
 
-Il progetto **EGESIA** mira alla progettazione e realizzazione di un **browser open source** concepito come un **punto di accesso unico e centralizzato** per tutti gli operatori e professionisti del Servizio Sanitario Nazionale (SSN) e dei Servizi Sanitari Regionali (SSR)[cite: 2, 3]. Il nome "Egesia" evoca l'idea di "guida" o "conduttore", riflettendo la nostra missione di guidare gli utenti attraverso la complessità del panorama sanitario digitale.
+Il progetto **EGESIA** mira alla progettazione e realizzazione di un **browser open source** concepito come un **punto di accesso unico e centralizzato** per tutti gli operatori e professionisti del Servizio Sanitario Nazionale (SSN) e dei Servizi Sanitari Regionali (SSR). Il nome "Egesia" evoca l'idea di "guida" o "conduttore", riflettendo la nostra missione di guidare gli utenti attraverso la complessità del panorama sanitario digitale.
 
 L'obiettivo è superare l'attuale frammentazione dei sistemi sanitari digitali , fornendo un'esperienza utente unificata, sicura e in tempo reale.
 
-**EGESIA non è un semplice browser, ma un centro di controllo e un hub interoperabile**. Attraverso un'**unica login** (basata su SPID, CIE o credenziali professionali certificate con autenticazione a più fattori), l'utente potrà accedere in modo autorizzato a tutte le piattaforme digitali e ai dati clinici[cite: 7].
+**EGESIA non è un semplice browser, ma un centro di controllo e un hub interoperabile**. Attraverso un'**unica login** (basata su SPID, CIE o credenziali professionali certificate con autenticazione a più fattori), l'utente potrà accedere in modo autorizzato a tutte le piattaforme digitali e ai dati clinici.
 
 ---
 

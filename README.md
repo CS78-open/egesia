@@ -44,10 +44,6 @@ Questo rende EGESIA estremamente accessibile e funzionale per il cittadino, supe
 
 ---
 
-Certamente! Riscrivo e integro il progetto EGESIA, specificando che per il cittadino può essere offerto anche come applicazione mobile (app), mantenendo l'esperienza unificata e la base tecnologica FHIR.
-
----
-
 **Progetto EGESIA: Browser Open Source "Health Hub" per il Servizio Sanitario Nazionale – Un Centro di Controllo Unificato per Cittadini e Professionisti (anche come App Mobile)**
 
 Il presente progetto mira alla progettazione e realizzazione di **EGESIA**, un browser web e **applicazione mobile open source avanzata**, specificamente adattata e ottimizzata per le esigenze del Servizio Sanitario Nazionale (SSN). EGESIA è concepita come un **punto di accesso unico e centralizzato** che rivoluziona l'interazione con l'ecosistema sanitario digitale, offrendo un'esperienza utente unificata, sicura e in tempo reale. Superando l'attuale frammentazione, EGESIA si rivolge a **due principali categorie di utenti**: i **cittadini** (tramite browser o app mobile dedicata) e i **professionisti sanitari** (tramite browser desktop/web), ognuno con il proprio percorso di login e set di funzionalità dedicato, garantendo la piena aderenza agli standard italiani di interoperabilità sanitaria, in particolare tramite HL7 FHIR e il suo "Realm Italiano".

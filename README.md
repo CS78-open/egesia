@@ -44,19 +44,6 @@ Questo rende EGESIA estremamente accessibile e funzionale per il cittadino, supe
 
 ---
 
-**Progetto EGESIA: Browser Open Source "Health Hub" per il Servizio Sanitario Nazionale – Un Centro di Controllo Unificato per Cittadini e Professionisti (anche come App Mobile)**
-
-Il presente progetto mira alla progettazione e realizzazione di **EGESIA**, un browser web e **applicazione mobile open source avanzata**, specificamente adattata e ottimizzata per le esigenze del Servizio Sanitario Nazionale (SSN). EGESIA è concepita come un **punto di accesso unico e centralizzato** che rivoluziona l'interazione con l'ecosistema sanitario digitale, offrendo un'esperienza utente unificata, sicura e in tempo reale. Superando l'attuale frammentazione, EGESIA si rivolge a **due principali categorie di utenti**: i **cittadini** (tramite browser o app mobile dedicata) e i **professionisti sanitari** (tramite browser desktop/web), ognuno con il proprio percorso di login e set di funzionalità dedicato, garantendo la piena aderenza agli standard italiani di interoperabilità sanitaria, in particolare tramite HL7 FHIR e il suo "Realm Italiano".
-
-**EGESIA come Centro di Controllo e Hub Interoperabile per Tutti:**
-
-L'elemento distintivo di EGESIA è la sua capacità di fungere da **hub interoperabile e centro di controllo**, con percorsi di accesso differenziati:
-
-*   **Accesso per il Cittadino (Browser o App Mobile):** Tramite **unica login (SPID/CIE)**, il cittadino avrà accesso autorizzato ai propri servizi del SSN e SSR (es. FSE, prenotazioni, referti) sia da browser web che da un'applicazione mobile nativa, garantendo flessibilità e immediatezza.
-*   **Accesso per il Professionista Sanitario (Browser Desktop/Web):** Tramite **unica login (credenziali professionali certificate con autenticazione a più fattori)**, l'operatore avrà accesso autorizzato a tutte le piattaforme digitali del SSN e SSR, con funzionalità avanzate e privilegi specifici del ruolo, ottimizzato per l'ambiente desktop/web.
-
-Questo approccio elimina la necessità di passare tra molteplici applicazioni o sistemi con credenziali diverse per entrambi i tipi di utente, consentendo ai cittadini una gestione più autonoma e comoda della propria salute e ai professionisti di operare con maggiore efficienza e focalizzarsi sulla cura del paziente.
-
 **Fase 1: Analisi dei Requisiti e Obiettivi Strategici**
 
 Prima di avviare lo sviluppo, sarà condotta un'analisi approfondita con tutti gli stakeholder del SSN (medici, infermieri, specialisti IT, amministrativi, pazienti, direzioni sanitarie, associazioni civiche). Gli obiettivi chiave includono:

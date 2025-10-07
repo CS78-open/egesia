@@ -20,52 +20,95 @@ L'obiettivo è superare l'attuale frammentazione dei sistemi sanitari digitali ,
 
 **EGESIA non è un semplice browser, ma un centro di controllo e un hub interoperabile**. Attraverso un'**unica login** (basata su SPID, CIE o credenziali professionali certificate con autenticazione a più fattori), l'utente potrà accedere in modo autorizzato a tutte le piattaforme digitali e ai dati clinici.
 
+
+**Per il Cittadino, EGESIA si presenta come:**
+
+1.  **Un'Applicazione Web Dedicata (usabile su qualsiasi browser esistente):** Il cittadino non dovrebbe scaricare un "nuovo browser" inteso come un'alternativa a Chrome. Invece, EGESIA sarebbe un **portale web avanzato** a cui si accede tramite l'URL (es. `https://egesia.salute.gov.it`). A quel punto, si autenticherebbe con SPID/CIE e utilizzerebbe le funzionalità offerte. Questo portale sarebbe progettato per funzionare in modo ottimale con i browser più diffusi (Chrome, Firefox, Safari, Edge). **Questa è la modalità più probabile e funzionale per il cittadino che usa un PC.**
+2.  **Un'App Mobile Nativa per Smartphone e Tablet:** Per l'accesso da mobile, la soluzione più comoda ed efficace sarebbe proprio un'app scaricabile dagli store (Apple App Store, Google Play Store). L'app EGESIA fornirebbe un'esperienza ottimizzata per il touch, integrerebbe funzionalità del dispositivo (es. biometria per l'accesso rapido) e permetterebbe notifiche push, tutto ciò che rende l'esperienza mobile superiore a quella di un browser su smartphone. **Questa è la modalità più probabile e funzionale per il cittadino che usa uno smartphone/tablet.**
+
+**Il "Browser" nel contesto di EGESIA (e il professionista sanitario):**
+
+*   **Per il Professionista Sanitario (Desktop/Web):** Qui l'idea potrebbe essere duplice:
+    1.  **Un'Applicazione Desktop Dedicata:** Costruita con framework come Electron o Tauri. Queste tecnologie permettono di creare applicazioni desktop che *utilizzano* tecnologie web (HTML, CSS, JavaScript) e spesso un motore di rendering web (come Chromium). L'utente scarica un'applicazione (come Slack o Spotify Desktop), ma al suo interno l'interfaccia è "web-based". Questo offre un ambiente più controllato e sicuro per il professionista, con possibili integrazioni a livello di sistema operativo non facilmente realizzabili in un normale browser web.
+    2.  **Un Portale Web Avanzato:** Simile al cittadino, ma con funzionalità più complesse e dedicate. Questo è un approccio meno restrittivo e può essere più facile da implementare su vasta scala.
+
+
+**In sintesi, per il cittadino:**
+
+*   **PC/Desktop:** Accede a EGESIA tramite un **portale web dedicato** usando il suo browser preferito (Chrome, Firefox, ecc.).
+*   **Smartphone/Tablet:** Scarica e utilizza l'**app mobile nativa EGESIA**.
+
+Questo rende EGESIA estremamente accessibile e funzionale per il cittadino, superando la potenziale "scomodità" che giustamente hai sollevato.
+
+**La visione rimane quella di un "Hub" unico, ma la sua "interfaccia" si adatta al contesto d'uso del cittadino (web o mobile app) e alle esigenze specifiche del professionista (applicazione desktop dedicata o portale web avanzato).**
+
 ---
+
+Certamente! Riscrivo e integro il progetto EGESIA, specificando che per il cittadino può essere offerto anche come applicazione mobile (app), mantenendo l'esperienza unificata e la base tecnologica FHIR.
+
+---
+
+**Progetto EGESIA: Browser Open Source "Health Hub" per il Servizio Sanitario Nazionale – Un Centro di Controllo Unificato per Cittadini e Professionisti (anche come App Mobile)**
+
+Il presente progetto mira alla progettazione e realizzazione di **EGESIA**, un browser web e **applicazione mobile open source avanzata**, specificamente adattata e ottimizzata per le esigenze del Servizio Sanitario Nazionale (SSN). EGESIA è concepita come un **punto di accesso unico e centralizzato** che rivoluziona l'interazione con l'ecosistema sanitario digitale, offrendo un'esperienza utente unificata, sicura e in tempo reale. Superando l'attuale frammentazione, EGESIA si rivolge a **due principali categorie di utenti**: i **cittadini** (tramite browser o app mobile dedicata) e i **professionisti sanitari** (tramite browser desktop/web), ognuno con il proprio percorso di login e set di funzionalità dedicato, garantendo la piena aderenza agli standard italiani di interoperabilità sanitaria, in particolare tramite HL7 FHIR e il suo "Realm Italiano".
+
+**EGESIA come Centro di Controllo e Hub Interoperabile per Tutti:**
+
+L'elemento distintivo di EGESIA è la sua capacità di fungere da **hub interoperabile e centro di controllo**, con percorsi di accesso differenziati:
+
+*   **Accesso per il Cittadino (Browser o App Mobile):** Tramite **unica login (SPID/CIE)**, il cittadino avrà accesso autorizzato ai propri servizi del SSN e SSR (es. FSE, prenotazioni, referti) sia da browser web che da un'applicazione mobile nativa, garantendo flessibilità e immediatezza.
+*   **Accesso per il Professionista Sanitario (Browser Desktop/Web):** Tramite **unica login (credenziali professionali certificate con autenticazione a più fattori)**, l'operatore avrà accesso autorizzato a tutte le piattaforme digitali del SSN e SSR, con funzionalità avanzate e privilegi specifici del ruolo, ottimizzato per l'ambiente desktop/web.
+
+Questo approccio elimina la necessità di passare tra molteplici applicazioni o sistemi con credenziali diverse per entrambi i tipi di utente, consentendo ai cittadini una gestione più autonoma e comoda della propria salute e ai professionisti di operare con maggiore efficienza e focalizzarsi sulla cura del paziente.
 
 **Fase 1: Analisi dei Requisiti e Obiettivi Strategici**
 
-Prima di avviare lo sviluppo, sarà condotta un'analisi approfondita con tutti gli stakeholder del SSN (medici, infermieri, specialisti IT, amministrativi, pazienti, direzioni sanitarie). Gli obiettivi chiave includono:
+Prima di avviare lo sviluppo, sarà condotta un'analisi approfondita con tutti gli stakeholder del SSN (medici, infermieri, specialisti IT, amministrativi, pazienti, direzioni sanitarie, associazioni civiche). Gli obiettivi chiave includono:
 
 *   **Sicurezza e Privacy:** Massima protezione dei dati sensibili dei pazienti, in conformità con GDPR e normative nazionali.
 *   **Interoperabilità Universale e Nazionale:** Capacità di comunicare in modo fluido e standardizzato con tutti i sistemi informativi sanitari esistenti e futuri, con particolare enfasi sull'adesione al **"Realm Italiano" (https://www.hl7.it/realm-italiano/)** di HL7 Italia per FHIR.
-*   **Usabilità Intuitiva:** Interfaccia utente progettata per essere chiara, accessibile (conforme W3C) e facile da usare per personale con diverse competenze informatiche.
-*   **Funzionalità Sanitarie Specifiche:** Strumenti dedicati che rispondano direttamente alle esigenze cliniche, diagnostiche e amministrative.
+*   **Usabilità Intuitiva e Personalizzata:** Interfacce utente progettate per essere chiare, accessibili (conforme W3C) e facili da usare, differenziate per le esigenze del cittadino (anche su mobile) e del professionista.
+*   **Funzionalità Sanitarie Specifiche:** Strumenti dedicati che rispondano direttamente alle esigenze di accesso ai servizi per il cittadino e alle esigenze cliniche, diagnostiche e amministrative per il professionista.
 *   **Trasparenza e Flessibilità:** L'approccio open source garantirà auditabilità, personalizzazione e un'evoluzione collaborativa del software, favorendo la partecipazione della comunità.
 
 **Fase 2: Architettura e Scelte Tecnologiche**
 
-Il browser sarà costruito su una base robusta e collaudata, estendendo un progetto open source esistente (es. basato su Chromium o un framework come Electron/Tauri).
+EGESIA sarà costruita su una base robusta e collaudata.
 
-*   **Motore del Browser:** Si valuterà l'adozione di un motore di rendering consolidato per garantire stabilità e compatibilità.
-*   **Linguaggi:** C++ per il core, JavaScript/TypeScript per l'interfaccia utente e funzionalità web, Python per script di integrazione.
-*   **Sicurezza:** Implementazione di crittografia end-to-end (TLS 1.3), supporto per autenticazione a due fattori (smart card, SPID, CIE), gestione granulare dei permessi tramite profili utente e sandboxing dei processi.
+*   **Per il Browser Desktop/Web (Professionista e Cittadino):** Estensione di un progetto open source esistente (es. basato su Chromium o un framework come Electron/Tauri).
+*   **Per l'App Mobile (Cittadino):** Sviluppo di app native o ibride (es. React Native, Flutter) per iOS e Android, che sfruttino le stesse API e logiche del browser, garantendo un'esperienza coerente e sicura.
+*   **Motore di Rendering/Framework UI:** Adozione di un motore/framework consolidato e performante.
+*   **Linguaggi:** C++ per il core (se applicabile), JavaScript/TypeScript per l'interfaccia utente e le funzionalità web/app, Python per script di integrazione e backend.
+*   **Sicurezza:** Implementazione di crittografia end-to-end (TLS 1.3), supporto per autenticazione a due fattori (SPID, CIE, smart card, token professionali, biometrica mobile), gestione granulare dei permessi tramite profili utente e sandboxing dei processi.
 *   **Interoperabilità FHIR:** Il cuore dell'interoperabilità sarà l'integrazione nativa con FHIR, con particolare attenzione ai profili e alle guide di implementazione definite nel Realm Italiano.
 
 **Fase 3: Funzionalità Chiave Basate su FHIR per lo Scambio Dati in Tempo Reale**
 
-Il browser sarà un "orchestrazione layer" che sfrutta **HL7 FHIR (Fast Healthcare Interoperability Resources)** e, crucialmente, i **profili specifici del Realm Italiano**, per aggregare e presentare dinamicamente dati e funzionalità da diverse fonti. Il browser non si limiterà a visualizzare link, ma agirà come un client FHIR intelligente.
+EGESIA sarà un "orchestrazione layer" che sfrutta **HL7 FHIR (Fast Healthcare Interoperability Resources)** e i **profili specifici del Realm Italiano**, per aggregare e presentare dinamicamente dati e funzionalità da diverse fonti, agendo come un client FHIR intelligente. Le funzionalità saranno distinte per i due profili utente, ma con una base dati comune e interoperabile:
 
-*   **Modulo Core FHIR:**
-    *   **Client FHIR Integrato:** Un client nativo capace di interagire con server FHIR remoti tramite API RESTful (GET, POST, PUT, DELETE) per inviare e ricevere risorse.
-    *   **Autenticazione SMART on FHIR:** Supporto completo per il framework di sicurezza SMART on FHIR (basato su OAuth2) per garantire autenticazione e autorizzazione sicure e granulari a livello di risorsa.
-    *   **Conformità ai Profili Nazionali FHIR (Realm Italiano):** Il browser sarà configurato per supportare e validare i profili FHIR specifici definiti per il contesto italiano, come dettagliato nel **"Realm Italiano" di HL7 Italia**, per la piena compatibilità con il Fascicolo Sanitario Elettronico (FSE) e altri sistemi nazionali.
+**A) Funzionalità per il Cittadino (Browser e App Mobile - Accesso con SPID/CIE):**
+
+*   **Fascicolo Sanitario Elettronico (FSE):** Accesso diretto e consolidato al proprio storico clinico, referti, diagnosi, terapie, profilassi vaccinali, con ottimizzazione per la fruizione mobile.
+*   **Prenotazione e Disdetta Appuntamenti:** Interfaccia unificata e user-friendly per il Servizio di Prenotazione Unificato (CUP) regionale/nazionale, con notifiche push per appuntamenti.
+*   **Consultazione Referti:** Accesso semplificato ai propri referti di laboratorio e diagnostica per immagini, anche tramite notifica di disponibilità.
+*   **Gestione Consenso:** Dichiarazione e gestione del consenso per il trattamento e la condivisione dei propri dati sanitari.
+*   **Teleconsulti Paziente-Medico:** Partecipazione a videoconsulti programmati con il proprio medico o specialisti, direttamente dall'app.
+*   **Pagamento Ticket:** Accesso semplificato ai sistemi di pagamento online.
+*   **Promemoria e Notifiche:** Gestione di terapie, appuntamenti, scadenze mediche.
+
+**B) Funzionalità per il Professionista Sanitario (Browser Desktop/Web - Accesso con Credenziali Professionali):**
 
 *   **Dashboard e Gestione Paziente Unificata (FHIR-Driven):**
-    *   Ogni utente (medico, infermiere) avrà una dashboard personalizzabile con accesso rapido a funzioni e dati.
-    *   La selezione di un paziente attiverà il recupero dinamico di tutte le informazioni rilevanti (Anagrafica - `Patient`, Allergie - `AllergyIntolerance`, Diagnosi - `Condition`, Osservazioni - `Observation`, Farmaci - `MedicationStatement`/`MedicationRequest`, Documenti Clinici - `DocumentReference`) da diversi server FHIR (CCE ospedaliero, medico di base, FSE regionale), interpretando e consolidando i dati secondo i profili italiani. Questi dati verranno aggregati e presentati in un'unica vista coerente, eliminando la frammentazione informativa e fornendo una visione completa del percorso di cura del paziente.
-
+    *   Accesso rapido a funzioni e dati.
+    *   La selezione di un paziente attiverà il recupero dinamico di tutte le informazioni rilevanti (Anagrafica - `Patient`, Allergie - `AllergyIntolerance`, Diagnosi - `Condition`, Osservazioni - `Observation`, Farmaci - `MedicationStatement`/`MedicationRequest`, Documenti Clinici - `DocumentReference`) da diversi server FHIR (CCE ospedaliero, medico di base, FSE regionale), interpretando e consolidando i dati secondo i profili italiani. Questi dati verranno aggregati e presentati in un'unica vista coerente.
 *   **Gestione Appuntamenti e Calendari (FHIR `Appointment`, `Schedule`, `Slot`):**
     *   Interfaccia unificata per la visualizzazione dei calendari professionali e la gestione in tempo reale delle **Liste d'Attesa**, con possibilità di prenotare, modificare o cancellare appuntamenti su scala regionale, aderendo agli standard FHIR italiani.
-
 *   **Gestione Referti e Documenti Clinici (FHIR `DiagnosticReport`, `DocumentReference`):**
     *   Visualizzazione, creazione, firma digitale e archiviazione sicura di referti diagnostici (es. da Laboratori di Analisi) e altri documenti clinici, collegandoli a sistemi esterni e fornendo accesso diretto ai dati di **Diagnostica per Immagini** (tramite integrazione DICOM o riferimenti FHIR), sempre in conformità con il Realm Italiano.
-
 *   **Prescrizioni Farmaceutiche Elettroniche (FHIR `MedicationRequest`, `MedicationDispense`):**
     *   Strumenti per la creazione, invio e gestione di prescrizioni elettroniche conformi a FHIR e alle specifiche italiane, inclusa la tracciabilità delle dispensazioni farmaceutiche da **Farmacie**.
-
 *   **Telemedicina e Monitoraggio Remoto (FHIR `Observation`, `Communication`):**
     *   Funzionalità integrate per **videoconsulti sicuri** e condivisione di dati. Integrazione con dispositivi IoT medici per la visualizzazione in tempo reale di parametri vitali (risorse `Observation`) e per il monitoraggio remoto dei pazienti, utilizzando profili FHIR interoperabili.
-
 *   **Strumenti di Sviluppo e Debug FHIR:**
     *   **Validatore FHIR (Realm Italiano):** Per garantire la conformità delle risorse rispetto ai profili nazionali specifici.
     *   **Visualizzatore Risorse:** Per ispezionare i payload JSON/XML di FHIR.
@@ -73,11 +116,11 @@ Il browser sarà un "orchestrazione layer" che sfrutta **HL7 FHIR (Fast Healthca
 
 **Fase 4: Sicurezza e Conformità Normativa**
 
-La sicurezza sarà la priorità assoluta, con:
+La sicurezza sarà la priorità assoluta per entrambi i profili utente, con:
 
-*   **Crittografia end-to-end** per tutte le comunicazioni e i dati.
+*   **Crittografia end-to-end** per tutte le comunicazioni e i dati, anche su mobile.
 *   **Sandboxing** e isolamento dei processi.
-*   **Aggiornamenti di sicurezza** automatici e robusti.
+*   **Aggiornamenti di sicurezza** automatici e robusti per browser e app.
 *   **Conformità stringente al GDPR** e a tutte le normative sanitarie italiane, inclusi i requisiti per l'interoperabilità definita a livello nazionale.
 *   **Audit Trail** dettagliato per tracciare tutte le operazioni.
 *   Programmi di **Penetration Testing** e **Bug Bounty**.

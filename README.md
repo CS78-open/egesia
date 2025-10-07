@@ -12,6 +12,8 @@ Ideatore progetto: Marco Pingitore - E-mail: marco@marcopingitore.it
 
 ---
 
+Il presente progetto mira alla progettazione e realizzazione di EGESIA, una suite di strumenti digitali open source avanzati (browser web, applicazione desktop e app mobile) specificamente adattata e ottimizzata per le esigenze del Servizio Sanitario Nazionale (SSN). EGESIA è concepita come un punto di accesso unico, centralizzato e intelligente che rivoluziona l'interazione con l'ecosistema sanitario digitale, offrendo un'esperienza utente unificata, sicura, in tempo reale e arricchita da funzionalità AI. Superando l'attuale frammentazione, EGESIA si rivolge a due principali categorie di utenti: i cittadini (tramite portale web o app mobile dedicata) e i professionisti sanitari (tramite applicazione desktop o portale web avanzato), ognuno con il proprio percorso di login e set di funzionalità dedicato, garantendo la piena aderenza agli standard italiani di interoperabilità sanitaria, in particolare tramite HL7 FHIR e il suo "Realm Italiano".
+
 ## Visione e Missione
 
 Il progetto **EGESIA** mira alla progettazione e realizzazione di un **browser open source** concepito come un **punto di accesso unico e centralizzato** per tutti gli operatori e professionisti del Servizio Sanitario Nazionale (SSN) e dei Servizi Sanitari Regionali (SSR). Il nome "Egesia" evoca (da "Hegesias" in greco antico) l'idea di "guida" o "conduttore", riflettendo la nostra missione di guidare gli utenti attraverso la complessità del panorama sanitario digitale.
@@ -62,6 +64,7 @@ EGESIA sarà costruita su una base robusta e collaudata.
 *   **Per l'App Mobile (Cittadino):** Sviluppo di app native o ibride (es. React Native, Flutter) per iOS e Android, che sfruttino le stesse API e logiche del browser, garantendo un'esperienza coerente e sicura.
 *   **Motore di Rendering/Framework UI:** Adozione di un motore/framework consolidato e performante.
 *   **Linguaggi:** C++ per il core (se applicabile), JavaScript/TypeScript per l'interfaccia utente e le funzionalità web/app, Python per script di integrazione e backend.
+*   **Infrastruttura AI:**: Moduli dedicati per l'AI, possibilmente sfruttando servizi cloud sicuri (e conformi SSN) o modelli on-device per funzionalità specifiche.
 *   **Sicurezza:** Implementazione di crittografia end-to-end (TLS 1.3), supporto per autenticazione a due fattori (SPID, CIE, smart card, token professionali, biometrica mobile), gestione granulare dei permessi tramite profili utente e sandboxing dei processi.
 *   **Interoperabilità FHIR:** Il cuore dell'interoperabilità sarà l'integrazione nativa con FHIR, con particolare attenzione ai profili e alle guide di implementazione definite nel Realm Italiano.
 

@@ -1,11 +1,11 @@
 # 🛡️ Progetto EGESIA 
 
-## Browser Open Source Dedicato per il Servizio Sanitario Nazionale (SSN)
+## Browser Open Source Dedicato agli operatori sanitari del Servizio Sanitario Nazionale (SSN)
 
 Referente progetto: Marco Pingitore - E-mail: marco@marcopingitore.it
 
 <p align="center">
-  <img src="assets/logo_egesia_finale.png" alt="Logo Progetto Egesia - SSNavigator" width="250"/>
+  <img src="assets/logo_egesia.png" alt="Logo Progetto Egesia - SSNavigator" width="250"/>
   <br>
   <i>La piattaforma di navigazione sicura per l'operatore sanitario nel SSN.</i>
 </p>

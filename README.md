@@ -25,7 +25,7 @@ L'obiettivo è superare l'attuale frammentazione dei sistemi sanitari digitali ,
 
 **Per il Cittadino, EGESIA si presenta come:**
 
-1.  **Un'Applicazione Web Dedicata (usabile su qualsiasi browser esistente):** Il cittadino non dovrebbe scaricare un "nuovo browser" inteso come un'alternativa a Chrome. Invece, EGESIA sarebbe un **portale web avanzato** a cui si accede tramite l'URL (es. `https://egesia.salute.gov.it`). A quel punto, si autenticherebbe con SPID/CIE e utilizzerebbe le funzionalità offerte. Questo portale sarebbe progettato per funzionare in modo ottimale con i browser più diffusi (Chrome, Firefox, Safari, Edge). **Questa è la modalità più probabile e funzionale per il cittadino che usa un PC.**
+1.  **Un'Applicazione Web Dedicata (usabile su qualsiasi browser esistente):** Il cittadino non dovrebbe scaricare un "nuovo browser" inteso come un'alternativa a Chrome. Invece, EGESIA sarebbe un **portale web avanzato** a cui si accede tramite l'URL dedicato. A quel punto, si autenticherebbe con SPID/CIE e utilizzerebbe le funzionalità offerte. Questo portale sarebbe progettato per funzionare in modo ottimale con i browser più diffusi (Chrome, Firefox, Safari, Edge). **Questa è la modalità più probabile e funzionale per il cittadino che usa un PC.**
 2.  **Un'App Mobile Nativa per Smartphone e Tablet:** Per l'accesso da mobile, la soluzione più comoda ed efficace sarebbe proprio un'app scaricabile dagli store (Apple App Store, Google Play Store). L'app EGESIA fornirebbe un'esperienza ottimizzata per il touch, integrerebbe funzionalità del dispositivo (es. biometria per l'accesso rapido) e permetterebbe notifiche push, tutto ciò che rende l'esperienza mobile superiore a quella di un browser su smartphone. **Questa è la modalità più probabile e funzionale per il cittadino che usa uno smartphone/tablet.**
 
 **Il "Browser" nel contesto di EGESIA (e il professionista sanitario):**
@@ -93,6 +93,7 @@ EGESIA sarà un "orchestrazione layer" che sfrutta **HL7 FHIR (Fast Healthcare I
     *   Visualizzazione, creazione, firma digitale e archiviazione sicura di referti diagnostici (es. da Laboratori di Analisi) e altri documenti clinici, collegandoli a sistemi esterni e fornendo accesso diretto ai dati di **Diagnostica per Immagini** (tramite integrazione DICOM o riferimenti FHIR), sempre in conformità con il Realm Italiano.
 *   **Prescrizioni Farmaceutiche Elettroniche (FHIR `MedicationRequest`, `MedicationDispense`):**
     *   Strumenti per la creazione, invio e gestione di prescrizioni elettroniche conformi a FHIR e alle specifiche italiane, inclusa la tracciabilità delle dispensazioni farmaceutiche da **Farmacie**.
+    *   **Funzionalità di messaggistica istantanea (chat) tra operatori sanitari:** alternativa all'utilizzo di WhatsApp e simili
 *   **Telemedicina e Monitoraggio Remoto (FHIR `Observation`, `Communication`):**
     *   Funzionalità integrate per **videoconsulti sicuri** e condivisione di dati. Integrazione con dispositivi IoT medici per la visualizzazione in tempo reale di parametri vitali (risorse `Observation`) e per il monitoraggio remoto dei pazienti, utilizzando profili FHIR interoperabili.
 *   **Strumenti di Sviluppo e Debug FHIR:**
